@@ -32,7 +32,6 @@ public class EmpleadoController {
                     , HttpStatus.CREATED
             );
         } catch (DataAccessException exDt) {
-            exDt.printStackTrace();
             return new ResponseEntity<>(
                     MensajeResponse
                             .builder()
